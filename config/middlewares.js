@@ -5,11 +5,10 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      enabled: true,
       origin: [
-        'http://localhost:5173', // local Vite dev
-        'https://foggyops.com',  // production site
-        'https://dev.foggyops.com', // dev site
+        'http://localhost:5173', // local dev
+        'https://foggyops.com',  // production
+        'https://dev.foggyops.com', // staging
       ],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
