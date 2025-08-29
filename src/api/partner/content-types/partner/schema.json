@@ -1,0 +1,19 @@
+{
+    "collectionName": "partners",
+    "info": { "singularName": "partner", "pluralName": "partners", "displayName": "Partner" },
+    "options": { "draftAndPublish": true },
+    "attributes": {
+      "name": { "type": "string", "required": true },
+      "slug": { "type": "uid", "targetField": "name" },
+      "website": { "type": "string" },
+      "logo": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+      "blurb": { "type": "text" },
+      "tier": {
+        "type": "enumeration",
+        "enum": ["Strategic", "Technology", "Integration"],
+        "default": "Technology"
+      },
+      "priority": { "type": "integer", "default": 9999 }
+    }
+  }
+  
