@@ -9,8 +9,9 @@ module.exports = async () => {
     global: ['find', 'findOne'],
     about: ['find', 'findOne'],
     partner: ['find', 'findOne'],
+    leader: ['find', 'findOne'],        // <-- add this line
   });
-  strapi.log.info('✅ Public permissions ensured for partner and existing types.');
+  strapi.log.info('✅ Public permissions ensured for partner & leader.');
 };
 
 async function ensurePublicPermissions(map) {
